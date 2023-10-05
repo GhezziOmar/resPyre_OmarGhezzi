@@ -29,7 +29,10 @@ conda env create -f dinov2_/conda-extras.yaml
   ```
 6. Install pyVHR:
   ```bash
-    python pyVHR/setup.py install
+    cd pyVHR
+  ```
+  ```bash
+    python setup.py install
   ```
 - Use pip to install the following dependencies:
   ```bash
