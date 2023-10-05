@@ -1,10 +1,18 @@
 # resPyre_depth
 
 ## Procedure to install resPyre (featured with depth model)
-- Install DINOv2 creating the virtual conda environment by running:
-```bash
-conda env create -f dinov2_/conda-extras.yaml
-```
+- Install DINOv2:
+  1) creating the virtual conda environment by running:
+  ```bash
+  conda env create -f dinov2_/conda-extras.yaml
+  ```
+  2) go to ./dinov2 and use pip to install DINOv2:
+  ```bash
+    cd dinov2
+  ```
+  ```bash
+    python setup.py install
+  ```
 - Manually install pyVHR:
 1. Install numba using conda:
   ```bash
@@ -70,6 +78,31 @@ conda env create -f dinov2_/conda-extras.yaml
   ```bash
     pip install protobuf==4.21
   ```
+- Use conda and pip to install the following pakages:
+  ```bash
+    conda install -c conda-forge plotly
+  ```
+  ```bash
+    pip install pybdf
+  ```
+  ```bash
+    conda install -c conda-forge pysimplegui
+  ```
+  ```bash
+    conda install -c conda-forge scikit-posthocs
+  ```
+  ```bash
+    conda install -c conda-forge scikit-image
+  ```
+  ```bash
+    conda install -c conda-forge tqdm
+  ```
+- Install tensorflow:
+  ```bash
+    conda install -c conda-forge tensorflow
+  ```
+
+
 
 
  
