@@ -55,6 +55,9 @@ conda env create -f dinov2_/conda-extras.yaml
     conda install -c conda-forge lmfit
   ```
 - Installa mediapipe:
+```bash
+    pip install mediapipe==0.9.0.1
+  ```
 - mediapipe installa protobuf 3.20.3 mentre cu11 (di dinov2) richiede protobuf >=4.21, <5, la soluzione è reinstallare protobuf con conda:
   ```bash
     conda install -c conda-forge protobuf
