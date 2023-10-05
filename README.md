@@ -2,11 +2,11 @@
 
 ### Procedure to install resPyre (DINOv2)
 - Firstly it is needed to create the virtual environment to allow the intallation of DINOv2, pyVHR and the specific resPyre dependencies, the conda-extras.yaml in ./dinov2 provides the DINOv2 dependecies for the monocular depth estimation :
-  1). creating the virtual conda environment by running:
+  1) creating the virtual conda environment by running:
   ```bash
   conda env create -f dinov2_/conda-extras.yaml
   ```
-  2). go to ./dinov2 and use pip to install DINOv2:
+  2) go to ./dinov2 and use pip to install DINOv2:
   ```bash
     cd dinov2
   ```
