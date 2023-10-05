@@ -1,7 +1,7 @@
 # resPyre_depth
 
-## Procedure to install resPyre (featured with depth model)
-- Install DINOv2:
+### Procedure to install resPyre (DINOv2)
+- Firstly it is needed to create the virtual environment to allow the intallation of DINOv2, pyVHR and the specific resPyre dependencies, the conda-extras.yaml in ./dinov2 provides the DINOv2 dependecies for the monocular depth estimation :
   1) creating the virtual conda environment by running:
   ```bash
   conda env create -f dinov2_/conda-extras.yaml
@@ -13,36 +13,37 @@
   ```bash
     python setup.py install
   ```
+### Procedure to install resPyre (pyVHR)
 - Manually install pyVHR:
-1. Install numba using conda:
+  1) Install numba using conda:
   ```bash
     conda install numba
   ```
-2. Install cupy:
+  2) Install cupy:
   ```bash
     conda install -c conda-forge cupy cuda-version=11.7
   ```
-3. Install cusignal (do not specify the cuda version):
+  3). Install cusignal (do not specify the cuda version):
   ```bash
     conda install -c rapidsai -c conda-forge -c nvidia \
     cusignal python=3.9
   ```
-4. Install kaleido:
+  4). Install kaleido:
   ```bash
     conda install -c conda-forge python-kaleido
   ```
-5. conda pytables:
+  5). conda pytables:
   ```bash
     conda install -c anaconda pytables
   ```
-6. Install pyVHR:
+  6). Install pyVHR:
   ```bash
     cd pyVHR
   ```
   ```bash
     python setup.py install
   ```
-- Use pip to install the following dependencies:
+- Use pip or conda to install the remaining dependencies (ignore the protobuf incompatibility while installing mediapipe): 
   ```bash
     pip install autorank
   ```
@@ -52,7 +53,6 @@
   ```bash
     pip install biosppy
   ```
-- Use conda to install the following pakages:
   ```bash
     conda install -c anaconda ipython
   ```
@@ -62,23 +62,9 @@
   ```bash
     conda install -c conda-forge lmfit
   ```
-- Installa mediapipe:
-```bash
-    pip install mediapipe==0.9.0.1
-  ```
-- mediapipe installa protobuf 3.20.3 mentre cu11 (di dinov2) richiede protobuf >=4.21, <5, la soluzione è reinstallare protobuf con conda:
   ```bash
-    conda install -c conda-forge protobuf
+    pip install mediapipe
   ```
-  oppure aggiornare protobuf alla versione più recente:
-  ```bash
-    pip install --upgrade protobuf
-  ```
-  o alla versione protobuf==4.22.0:
-  ```bash
-    pip install protobuf==4.21
-  ```
-- Use conda and pip to install the following pakages:
   ```bash
     conda install -c conda-forge plotly
   ```
@@ -97,11 +83,25 @@
   ```bash
     conda install -c conda-forge tqdm
   ```
-- Install tensorflow:
   ```bash
-    conda install -c conda-forge tensorflow
+    pip install tensorflow==2.11.0
   ```
-
+  ```bash
+    pip install common==0.1.2
+  ```
+  ```bash
+    pip install emd==0.6.2
+  ```
+  ```bash
+    pip install opencv-python==4.7.0.72
+  ```
+  ```bash
+    pip install opencv-contrib-python==4.7.0.68
+  ```
+  ```bash
+    pip install tvm==1.0.0
+  ```
+  
 
 
 
