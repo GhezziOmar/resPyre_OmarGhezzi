@@ -16,7 +16,6 @@
   ```
 ### Procedure to install resPyre (pyVHR)
 - Manually install pyVHR:
-  
   1). Install numba using conda:
   ```bash
     conda install numba
